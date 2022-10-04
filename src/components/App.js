@@ -4,12 +4,19 @@ const App = () => {
   const handleDoubleClick = (event) => {
     console.log("I was double clicked");
   };
+
+  const handleClick = () => {
+    console.log("I was double not clicked");
+  };
   return (
     <div id="main">
       <button
         id="dblclick-btn"
         onDoubleClick={(e) => {
           handleDoubleClick(e);
+        }}
+        onClick={() => {
+          handleClick();
         }}
       >
         Double click me
