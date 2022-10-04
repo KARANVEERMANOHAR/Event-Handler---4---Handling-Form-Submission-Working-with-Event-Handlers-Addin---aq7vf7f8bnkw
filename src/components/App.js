@@ -6,7 +6,7 @@ const App = () => {
   };
 
   const handleClick = () => {
-    console.log("I was double not clicked");
+    console.log("I was not double clicked");
   };
   return (
     <div id="main">
